@@ -1,0 +1,21 @@
+{
+    "Version": "2012-10-17",
+    "Statement": [
+        {
+            "Effect": "Allow",
+            "Principal": {
+                "Service": "compute-optimizer.amazonaws.com"
+            },
+            "Action": "s3:GetBucketAcl",
+            "Resource": "arn:aws:s3:::test-bucket"
+        },
+        {
+            "Effect": "Allow",
+            "Principal": {
+                "Service": "compute-optimizer.amazonaws.com"
+            },
+            "Action": "s3:GetBucketPolicyStatus",
+            "Resource": "arn:aws:s3:::test-bucket"
+        }
+    ]
+}
